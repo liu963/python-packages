@@ -1,0 +1,34 @@
+# Base packages.
+ipython
+certifi
+
+# Scientific computing.
+numpy
+scipy
+scikit-learn
+Cython
+h5py
+joblib
+Pillow
+thunder-python
+pandas
+scikit-image
+shapely
+picos
+future
+bottleneck
+sima
+
+# Visualization.
+matplotlib
+click
+plotly
+seaborn
+bokeh
+
+# Other.
+mechanize
+SQLAlchemy
+tweepy
+pycallgraph
+awscli
