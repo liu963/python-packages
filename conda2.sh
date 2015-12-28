@@ -1,3 +1,5 @@
+conda update -y --all
+
 # Core packages.
 conda install --yes \
     blaze-core \
@@ -6,6 +8,7 @@ conda install --yes \
     freetype \
     future \
     ipython \
+    jupyter \
     libpng \
     libsodium \
     libtiff \
@@ -34,7 +37,6 @@ conda install --yes \
     beautiful-soup \
     gensim \
     nltk \
-    opencv \
     pyamg \
     scikit-image \
     scikit-learn \
@@ -51,8 +53,7 @@ conda install --yes \
 # APIs.
 conda install --yes \
     pillow \
-    protobuf \
-    starcluster
+    protobuf
 
 # Storage.
 conda install --yes \
@@ -62,4 +63,4 @@ conda install --yes \
     sqlite
 
 # Now, everything else.
-pip install -r requirements.txt
+pip install -r requirements2.txt

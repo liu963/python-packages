@@ -5,9 +5,8 @@ certifi
 pycallgraph
 
 # Scientific computing.
-sima
-thunder-python
 picos
+sima
 
 # Visualization.
 plotly
@@ -16,3 +15,7 @@ plotly
 awscli
 mechanize
 tweepy
+
+# Packages not available on OS X.
+# starcluster
+# opencv

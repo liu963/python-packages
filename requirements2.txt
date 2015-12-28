@@ -1,0 +1,22 @@
+# Base packages.
+certifi
+
+# Introspection.
+pycallgraph
+
+# Scientific computing.
+picos
+sima
+thunder-python
+
+# Visualization.
+plotly
+
+# APIs.
+awscli
+mechanize
+tweepy
+
+# Packages not available on OS X.
+# starcluster
+# opencv
