@@ -1,34 +1,18 @@
 # Base packages.
-ipython
 certifi
 
+# Introspection.
+pycallgraph
+
 # Scientific computing.
-numpy
-scipy
-scikit-learn
-Cython
-h5py
-joblib
-Pillow
-thunder-python
-pandas
-scikit-image
-shapely
-picos
-future
-bottleneck
 sima
+thunder-python
+picos
 
 # Visualization.
-matplotlib
-click
 plotly
-seaborn
-bokeh
 
-# Other.
-mechanize
-SQLAlchemy
-tweepy
-pycallgraph
+# APIs.
 awscli
+mechanize
+tweepy

@@ -1,0 +1,65 @@
+# Core packages.
+conda install --yes \
+    blaze-core \
+    cython \
+    decorator \
+    freetype \
+    future \
+    ipython \
+    libpng \
+    libsodium \
+    libtiff \
+    libxml2 \
+    llvmlite \
+    numpy \
+    pandas \
+    toolz \
+    tornado \
+    xray
+
+# Introspection.
+conda install --yes \
+    bottleneck \
+    numba \
+    pep8
+
+# Frameworks.
+conda install --yes \
+    dask \
+    joblib
+
+# Scientific computing.
+conda install --yes \
+    astropy \
+    beautiful-soup \
+    gensim \
+    nltk \
+    opencv \
+    pyamg \
+    scikit-image \
+    scikit-learn \
+    scipy \
+    shapely
+
+# Visualization.
+conda install --yes \
+    bokeh \
+    click \
+    matplotlib \
+    seaborn
+
+# APIs.
+conda install --yes \
+    pillow \
+    protobuf \
+    starcluster
+
+# Storage.
+conda install --yes \
+    h5py \
+    hdf5 \
+    sqlalchemy \
+    sqlite
+
+# Now, everything else.
+pip install -r requirements.txt
