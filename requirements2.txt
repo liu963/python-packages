@@ -5,9 +5,11 @@ certifi
 pycallgraph
 
 # Scientific computing.
+deap
 picos
 sima
 thunder-python
+tpot
 
 # Visualization.
 plotly
