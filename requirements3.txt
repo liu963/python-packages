@@ -1,5 +1,6 @@
 # Base packages.
 certifi
+distributed
 
 # Introspection.
 pycallgraph
