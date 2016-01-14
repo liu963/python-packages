@@ -4,6 +4,7 @@ conda update -y --all
 conda install --yes \
     blaze-core \
     cython \
+    dask \
     decorator \
     freetype \
     future \
