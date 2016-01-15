@@ -19,6 +19,7 @@ conda install --yes \
     pandas \
     toolz \
     tornado \
+    twisted \
     xray
 
 # Introspection.
