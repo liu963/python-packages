@@ -10,6 +10,12 @@ deap
 picos
 sima
 tpot
+fbpca
+
+# Deep learning.
+keras
+lasagne
+scikit-neuralnetwork
 
 # Visualization.
 plotly

@@ -11,6 +11,12 @@ picos
 sima
 thunder-python
 tpot
+fbpca
+
+# Deep learning.
+keras
+lasagne
+scikit-neuralnetwork
 
 # Visualization.
 plotly

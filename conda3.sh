@@ -17,6 +17,7 @@ conda install --yes \
     llvmlite \
     numpy \
     pandas \
+    theano \
     toolz \
     tornado \
     twisted \
