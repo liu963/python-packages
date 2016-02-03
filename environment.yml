@@ -1,22 +1,5 @@
-# Should make this whole thing a lot easier...
-
-channels:
-    - defaults
-
-# Makes batch installs a lot easier.
-always_yes: True
-
-# Indicate when we've switched to Python 2.
-changeps1: True
-
-# Use pip when listing packages with conda list.
-use_pip: True
-
-# List of packages to install by default when a new
-# environment is created (does this include the root environment?).
-create_default_packages:
+dependencies:
     - astropy
-    - beautiful-soup
     - blaze-core
     - bokeh
     - bottleneck
@@ -43,8 +26,6 @@ create_default_packages:
     - pandas
     - pep8
     - pillow
-    - protobuf
-    - pyamg
     - scikit-image
     - scikit-learn
     - scipy
@@ -52,8 +33,23 @@ create_default_packages:
     - shapely
     - sqlalchemy
     - sqlite
-    - theano
     - toolz
     - tornado
     - twisted
     - xray
+    - pip:
+        - awscli
+        - certifi
+        - deap
+        - distributed
+        - fbpca
+        - keras
+        - lasagne
+        - mechanize
+        - picos
+        - plotly
+        - pycallgraph
+        - scikit-neuralnetwork
+        - sima
+        - tpot
+        - tweepy
