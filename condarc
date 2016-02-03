@@ -1,0 +1,59 @@
+# Should make this whole thing a lot easier...
+
+channels:
+    - defaults
+
+# Makes batch installs a lot easier.
+always_yes: True
+
+# Indicate when we've switched to Python 2.
+changeps1: True
+
+# Use pip when listing packages with conda list.
+use_pip: True
+
+# List of packages to install by default when a new
+# environment is created (does this include the root environment?).
+create_default_packages:
+    - astropy
+    - beautiful-soup
+    - blaze-core
+    - bokeh
+    - bottleneck
+    - click
+    - cython
+    - dask
+    - decorator
+    - freetype
+    - gensim
+    - h5py
+    - hdf5
+    - ipython
+    - joblib
+    - jupyter
+    - libpng
+    - libsodium
+    - libtiff
+    - libxml2
+    - llvmlite
+    - matplotlib
+    - nltk
+    - numba
+    - numpy
+    - pandas
+    - pep8
+    - pillow
+    - protobuf
+    - pyamg
+    - scikit-image
+    - scikit-learn
+    - scipy
+    - seaborn
+    - shapely
+    - sqlalchemy
+    - sqlite
+    - theano
+    - toolz
+    - tornado
+    - twisted
+    - xray

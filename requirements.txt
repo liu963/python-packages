@@ -9,7 +9,6 @@ pycallgraph
 deap
 picos
 sima
-thunder-python
 tpot
 fbpca
 
@@ -25,7 +24,3 @@ plotly
 awscli
 mechanize
 tweepy
-
-# Packages not available on OS X.
-# starcluster
-# opencv
