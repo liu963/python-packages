@@ -7,9 +7,9 @@
 ### CONFIGURATION OPTIONS ###
 #############################
 
-os="osx"  # You can change this to "osx" if you're on a Mac.
+os="linux"  # You can change this to "osx" if you're on a Mac.
 py2=true  # You can change this to false if you don't want a Py2 environment.
-prefix=/opt/python_test
+prefix=/opt/python
 
 ##############################
 ### THAT'T IT, YOU'RE DONE ###
