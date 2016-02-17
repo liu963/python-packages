@@ -39,6 +39,7 @@ dependencies:
     - xray
     - pip:
         - awscli
+        - bolt-python
         - certifi
         - deap
         - distributed
@@ -51,5 +52,6 @@ dependencies:
         - pycallgraph
         - scikit-neuralnetwork
         - sima
+        - spark-sklearn
         - tpot
         - tweepy
