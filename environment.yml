@@ -19,6 +19,7 @@ dependencies:
     - libtiff
     - libxml2
     - llvmlite
+    - lz4
     - matplotlib
     - nltk
     - numba
