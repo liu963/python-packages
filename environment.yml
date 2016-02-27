@@ -55,4 +55,5 @@ dependencies:
         - sima
         - spark-sklearn
         - tpot
+        - tqdm
         - tweepy
