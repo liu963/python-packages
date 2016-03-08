@@ -45,7 +45,7 @@ if [[ "$py2" == true ]]; then
     #################################
 
     if [[ "$os" == "linux" ]]; then
-        conda install -y starcluster opencv theano
+        conda install -y starcluster theano
     fi
 
     conda install -y astropy beautiful-soup future protobuf pyamg
@@ -64,7 +64,6 @@ else
     if [[ "$os" == "linux" ]]; then
         conda install -y theano
         pip install starcluster
-        pip install opencv
     fi
 
     ##############################
