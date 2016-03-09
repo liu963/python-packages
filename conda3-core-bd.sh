@@ -19,5 +19,4 @@ conda install -y decorator gensim h5py hdf5 ipython joblib jupyter matplotlib \
     nltk numpy pandas pillow scipy scikit-learn scikit-image toolz
 
 pip install spark-sklearn
-pip install tpot
     
