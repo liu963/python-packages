@@ -3,6 +3,7 @@
 # Barebones core installation of a Python environment for use in
 # BlueData nodes.
 
+prefix=/opt/python
 bin="Miniconda3-latest-Linux-x86_64.sh"
 url="https://repo.continuum.io/miniconda/${bin}"
 curl -O $url
