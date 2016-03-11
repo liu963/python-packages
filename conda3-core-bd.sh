@@ -16,7 +16,7 @@ conda install -y nbformat
 
 # Install all the base packages.
 conda install -y decorator gensim h5py hdf5 ipython joblib jupyter matplotlib \
-    nltk numpy pandas pillow scipy scikit-learn scikit-image toolz
+    nltk numpy pandas pillow psutil scipy scikit-learn scikit-image toolz
 
 pip install spark-sklearn
     
