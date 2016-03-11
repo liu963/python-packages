@@ -52,6 +52,7 @@ dependencies:
         - plotly
         - pycallgraph
         - scikit-neuralnetwork
+        - sframe
         - sima
         - spark-sklearn
         - tpot
