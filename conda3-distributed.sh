@@ -5,7 +5,7 @@
 prefix=/opt/python
 bin="Miniconda3-latest-Linux-x86_64.sh"
 url="https://repo.continuum.io/miniconda/${bin}"
-curl -O $url
+wget $url
 chmod +x $bin && ./${bin} -f -b -p $prefix && rm ./${bin}
 export PATH=${prefix}/bin:$PATH
 
