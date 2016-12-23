@@ -31,6 +31,7 @@ export PATH=${prefix}/bin:$PATH
 # Update everything.
 conda update -y --all
 conda install -y nbformat
+conda config --add channels conda-forge
 
 # Add the condarc file.
 cp environment.yml ${prefix}/
