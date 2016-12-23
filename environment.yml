@@ -7,6 +7,7 @@ dependencies:
     - cython
     - dask
     - decorator
+    - fastparquet
     - freetype
     - gensim
     - h5py
@@ -37,7 +38,7 @@ dependencies:
     - toolz
     - tornado
     - twisted
-    - xray
+    - xarray
     - pip:
         - awscli
         - bolt-python
@@ -47,7 +48,7 @@ dependencies:
         - fbpca
         - keras
         - lasagne
-        - mechanize
+        - requests
         - picos
         - plotly
         - pycallgraph
