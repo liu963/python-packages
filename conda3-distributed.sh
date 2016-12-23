@@ -14,6 +14,7 @@ conda update -y --all
 conda install -y nbformat
 
 # Install all the base packages.
-conda install -y dask decorator gensim h5py hdf5 ipython joblib jupyter matplotlib \
-    nltk numpy pandas pillow psutil scipy scikit-learn scikit-image toolz
+conda install -y bokeh dask decorator gensim h5py hdf5 ipython joblib jupyter \
+    matplotlib nltk numpy pandas pillow psutil scipy scikit-learn scikit-image \
+    toolz terminado
 conda install -y distributed -c conda-forge    
