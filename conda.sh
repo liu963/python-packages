@@ -34,8 +34,8 @@ conda install -y nbformat
 conda config --add channels conda-forge
 
 # Install some valuable packages.
-conda install -y -c menpo menpoproject
-conda install -y -c menpo opencv3
+conda install -c menpo -y opencv3
+conda install -c menpo -y menpoproject
 
 # Add the condarc file.
 cp environment.yml ${prefix}/
