@@ -36,6 +36,7 @@ conda config --add channels conda-forge
 # Install some valuable packages.
 conda install -c menpo -y opencv3
 conda install -c menpo -y menpoproject
+conda install -c soumith -y pytorch torchvision
 
 # Add the condarc file.
 cp environment.yml ${prefix}/
