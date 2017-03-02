@@ -24,7 +24,8 @@ if [[ "$os" == "osx" ]]; then
 fi
 bin="Miniconda3-latest-${f}-x86_64.sh"
 url="https://repo.continuum.io/miniconda/${bin}"
-curl -O $url
+#curl -O $url
+wget $url
 chmod +x $bin && ./${bin} -f -b -p $prefix && rm ./${bin}
 export PATH=${prefix}/bin:$PATH
 
@@ -35,16 +36,16 @@ conda config --add channels conda-forge
 
 # Install some valuable packages.
 conda install -c menpo -y opencv3
-conda install -c menpo -y menpoproject
+conda install -c asmeurer -y pango
 conda install -c soumith -y pytorch torchvision
 
 # Add the condarc file.
 cp environment.yml ${prefix}/
 conda env update -n root -f ${prefix}/environment.yml
 if [[ "$py2" == true ]]; then
-    conda create -y -n python2 python=2
-    conda env update -n python2 -f ${prefix}/environment.yml
-    source activate python2
+    conda create -y -n py27 python=2
+    conda env update -n py27 -f ${prefix}/environment.yml
+    source activate py27
 
     #################################
     ### INSTALL PYTHON 2 PACKAGES ###
