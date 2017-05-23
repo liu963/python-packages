@@ -1,28 +1,33 @@
 #!/bin/bash
 
-# Anaconda environment setup script. By default, it installs a linux Miniconda
-# for Python 3 and creates a parallel Python 2 environment.
+# Anaconda environment setup script. Basically, it installs core Miniconda,
+# then fires up an accompanying Python script to handle the rest of the
+# customized install.
 
 #############################
 ### CONFIGURATION OPTIONS ###
 #############################
 
-os="linux"  # You can change this to "osx" if you're on a Mac.
-py2=true  # You can change this to false if you don't want a Py2 environment.
-prefix=/opt/python
+# Set up defaults.
+
+# Can be "Linux" or "MacOSX"
+OS_VERSION="Linux"
+#OS_VERSION="MacOSX"
+
+# Can be anywhere on the filesystem.
+INSTALL_PREFIX="/opt/python"
+
+# Can be 2 or 3.
+PYTHON_VERSION="3"
+#PYTHON_VERSION="2"
 
 ##############################
 ### THAT'T IT, YOU'RE DONE ###
 ##############################
 
-# Now let the installer do its thing.
+# Download the corresponding Miniconda installer.
 
-# First step: download Miniconda.
-f="Linux"
-if [[ "$os" == "osx" ]]; then
-    f="MacOSX"
-fi
-bin="Miniconda3-latest-${f}-x86_64.sh"
+bin="Miniconda3-latest-${OS_VERSION}-x86_64.sh"
 url="https://repo.continuum.io/miniconda/${bin}"
 #curl -O $url
 wget $url
@@ -31,49 +36,11 @@ export PATH=${prefix}/bin:$PATH
 
 # Update everything.
 conda update -y --all
-conda install -y nbformat
-conda config --add channels conda-forge
 
-# Install some valuable packages.
-conda install -c menpo -y opencv3
-conda install -c asmeurer -y pango
-conda install -c soumith -y pytorch torchvision
-
-# Add the condarc file.
-cp environment.yml ${prefix}/
-conda env update -n root -f ${prefix}/environment.yml
-if [[ "$py2" == true ]]; then
-    conda create -y -n py27 python=2
-    conda env update -n py27 -f ${prefix}/environment.yml
-    source activate py27
-
-    #################################
-    ### INSTALL PYTHON 2 PACKAGES ###
-    #################################
-
-    if [[ "$os" == "linux" ]]; then
-        conda install -y starcluster theano
-    fi
-
-    conda install -y astropy beautiful-soup future protobuf pyamg
-    pip install thunder-python
-
-    ##############################
-    ### THAT'T IT, YOU'RE DONE ###
-    ##############################
-
-    source deactivate
-else
-    #################################
-    ### INSTALL PYTHON 3 PACKAGES ###
-    #################################
-
-    if [[ "$os" == "linux" ]]; then
-        conda install -y theano
-        pip install starcluster
-    fi
-
-    ##############################
-    ### THAT'T IT, YOU'RE DONE ###
-    ##############################
+# Should we create a Python 2 environment?
+if [[ "$PYTHON_VERSION" == "2" ]]; then
+    conda create -y -n py2 python=2
 fi
+
+# Fire up the Python install script.
+python install.py -v ${PYTHON_VERSION} -p ${PYTHON_VERSION} -o ${OS_VERSION}
