@@ -15,6 +15,7 @@ dependencies:
   - keras
   - lasagne
   - libsodium
+  - mxnet
   - opencv
   - pillow
   - plotly

@@ -4,6 +4,7 @@ dependencies:
     - datashader
     - decorator
     - gensim
+    - graphviz
     - h5py
     - hdf5
     - ipython
@@ -34,3 +35,5 @@ dependencies:
     - pip:
         - mypy
         - umap-learn
+        - monkeytype
+        - sparse
